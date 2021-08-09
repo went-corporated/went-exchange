@@ -8,7 +8,7 @@ let angle = 0;
 let transitionTime = .5;
 cornerBtn.onclick = function(){
     if (clicked === false){
-        diapo1.style = `transform: translateX(-100%); transition: ${transitionTime}s;`;
+        diapo1.style = `transform: translateX(-125%); transition: ${transitionTime}s;`;
         diapo2.style = `transform: translateX(0%); transition: ${transitionTime}s;`;
         cornerBtnArrow.style = `transform: rotate(${angle}deg); transition: ${transitionTime}s;`;
         angle -= 180;
@@ -16,7 +16,7 @@ cornerBtn.onclick = function(){
     }
     else{
         diapo1.style = `transform: translateX(0%); transition: ${transitionTime}s;`;
-        diapo2.style = `transform: translateX(100%); transition: ${transitionTime}s;`;
+        diapo2.style = `transform: translateX(125%); transition: ${transitionTime}s;`;
         cornerBtnArrow.style = `transform: rotate(${angle}deg); transition: ${transitionTime}s;`;
         angle -= 180;
         clicked = false;
