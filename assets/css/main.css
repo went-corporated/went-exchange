@@ -99,6 +99,7 @@ font-family: 'Arvo', serif;
     margin: 0; padding: 0;
     margin-left: 12.5%;
     color: white;
+    overflow: scroll;
 }
 
 #diapositive_1{
@@ -119,6 +120,62 @@ font-family: 'Arvo', serif;
 }
 
 .diapositive-text{
-    margin-top: 125px;
+    margin-top: 90px;
     font-size: 20px;
+    text-align: justify;
+}
+
+#menubar_toggle_btn{
+    position: fixed;
+    top: 25px; right: 25px;
+    width: 100px; height: 50px;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center; justify-content: center;
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+#menubar_toggle_btn:hover{
+    background-color: rgb(163, 76, 245);
+}
+
+@media screen and (max-width: 950px){
+    .menu-bar{
+        transform: translateX(-250px);
+    }
+    .content-container{
+        transform: translate(-250px);
+        width: 100%;
+    }
+    #menubar_toggle_btn{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .diapositive-title{
+        font-size: 65px;
+    }
+    .diapositive-subtitle{
+        font-size: 30px;
+    }
+    .diapositive-text{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .diapositive-title{
+        font-size: 55px;
+    }
+    .diapositive-subtitle{
+        font-size: 25px;
+    }
+    .diapositive-text{
+        font-size: 17.5px;
+    }
 }
