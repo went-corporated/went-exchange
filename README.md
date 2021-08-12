@@ -1,2 +1,2 @@
 # went-exchange
-Trouvez le snippets qu'il vous faut !
+Trouvez le snippet qu'il vous faut !
